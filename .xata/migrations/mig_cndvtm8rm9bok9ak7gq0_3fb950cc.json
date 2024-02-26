@@ -1,0 +1,19 @@
+{
+  "id": "mig_cndvtm8rm9bok9ak7gq0",
+  "parentID": "mig_cndvti0elaf56a40uh20",
+  "checksum": "1:3fb950cc87146e1c97efb5b660b486b30951d3ec16bb0d3e320bfd82bcdaa921",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "organization",
+          "type": "link",
+          "link": {
+            "table": "organizations"
+          }
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

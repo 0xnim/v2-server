@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvvooelaf56a40uhbg",
+  "parentID": "mig_cndvvjgelaf56a40uhag",
+  "checksum": "1:1e02d46cfb18747f6a86c10203706f9b4b219d9fb78f4ba2b652eed412f45b57",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "role",
+          "type": "string"
+        },
+        "table": "team_members"
+      }
+    }
+  ]
+}

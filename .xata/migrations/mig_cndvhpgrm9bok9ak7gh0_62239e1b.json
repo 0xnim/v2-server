@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvhpgrm9bok9ak7gh0",
+  "parentID": "mig_cndvgqoelaf56a40ugj0",
+  "checksum": "1:62239e1b9fa147e0150ddc0abdf6fe9083deeafc106bf4305aad3dee85d058ae",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

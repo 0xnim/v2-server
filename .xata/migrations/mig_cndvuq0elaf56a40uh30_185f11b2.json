@@ -1,0 +1,20 @@
+{
+  "id": "mig_cndvuq0elaf56a40uh30",
+  "parentID": "mig_cndvuk0rm9bok9ak7gvg",
+  "checksum": "1:185f11b28fdc8bbfe4fd5b673a7c613a42086758dd92f577d8dfe5888b4f8863",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "team",
+          "type": "link",
+          "link": {
+            "table": "teams"
+          },
+          "unique": true
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_cndvpjgelaf56a40ugqg",
+  "parentID": "mig_cndvpdorm9bok9ak7gm0",
+  "checksum": "1:e0bfa28b597007720ee736368b97ee9f8b9f6d39576f3ee6b4c69e6d59e2e5ae",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "github_id",
+          "type": "string",
+          "unique": true
+        },
+        "table": "users"
+      }
+    }
+  ]
+}

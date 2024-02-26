@@ -1,0 +1,18 @@
+{
+  "id": "mig_cndvvjgelaf56a40uhag",
+  "parentID": "mig_cndvv8gelaf56a40uh9g",
+  "checksum": "1:db80040606e05d0dcdd3bd5d65a795a2c6ae3b192f6817c2b865c9404fe67fd5",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "accepted",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "team_members"
+      }
+    }
+  ]
+}

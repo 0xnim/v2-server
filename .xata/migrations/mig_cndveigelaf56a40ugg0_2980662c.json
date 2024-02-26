@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndveigelaf56a40ugg0",
+  "parentID": "mig_cndveb0elaf56a40ugf0",
+  "checksum": "1:2980662cdf26ed2779725ffbd78acdf2a94350633f4f988cc63ef08c86facd02",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "icon_url",
+          "type": "string"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

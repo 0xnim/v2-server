@@ -1,0 +1,18 @@
+{
+  "id": "mig_cndvu88rm9bok9ak7gu0",
+  "parentID": "mig_cndvttgrm9bok9ak7gs0",
+  "checksum": "1:1698c971961f05379a03da4b5f17faef7aa004ada05db6cb10027bc49440a2d7",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "Mod Makers"
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

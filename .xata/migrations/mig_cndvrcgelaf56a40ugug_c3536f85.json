@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvrcgelaf56a40ugug",
+  "parentID": "mig_cndvqu8rm9bok9ak7gp0",
+  "checksum": "1:c3536f85fbb35eff2b5d2de06b369799d047632e0efd5501e5d6d91edaab9b8f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "webhook_sent",
+          "type": "bool"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

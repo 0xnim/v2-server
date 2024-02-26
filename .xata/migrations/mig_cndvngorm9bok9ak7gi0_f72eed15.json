@@ -1,0 +1,19 @@
+{
+  "id": "mig_cndvngorm9bok9ak7gi0",
+  "parentID": "mig_cndvne8elaf56a40ugn0",
+  "checksum": "1:f72eed15b9d770cd49665940f1c07c1fbccbc85557e2218a96ffa095c65f1404",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "game",
+          "type": "link",
+          "link": {
+            "table": "games"
+          }
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

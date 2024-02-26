@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvnjgrm9bok9ak7gj0",
+  "parentID": "mig_cndvngorm9bok9ak7gi0",
+  "checksum": "1:de49854ec67ced062e077eaedd03795722225a2be4134d937e7a76c61ccb8d58",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "icon",
+          "type": "text"
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

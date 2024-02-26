@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvqa8elaf56a40ugrg",
+  "parentID": "mig_cndvpn8rm9bok9ak7gn0",
+  "checksum": "1:61f9616116c1a17811ec6d79c41133160aaaecb960d77e54514ec79da4d4993c",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "downloads",
+          "type": "int"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvqu8rm9bok9ak7gp0",
+  "parentID": "mig_cndvqigrm9bok9ak7go0",
+  "checksum": "1:f8168a6e05e6f4fcef0758362664decd2f5e25c03d245f50d188acc3bf1aea25",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "approved",
+          "type": "datetime"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

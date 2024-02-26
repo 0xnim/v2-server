@@ -1,0 +1,14 @@
+{
+  "id": "mig_cndvqe0elaf56a40ugsg",
+  "parentID": "mig_cndvqa8elaf56a40ugrg",
+  "checksum": "1:7ccde828df56c4f1b53f90ec36e8d034187207b6d22fe9653402b93dd7d8c70a",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "body",
+        "oldName": "description",
+        "table": "projects"
+      }
+    }
+  ]
+}

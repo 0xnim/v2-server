@@ -1,0 +1,18 @@
+{
+  "id": "mig_cndvvu8rm9bok9ak7h10",
+  "parentID": "mig_cndvvooelaf56a40uhbg",
+  "checksum": "1:363cbb3f2a6c1f5204dc0a1c6bdfd48614d8b172dae76ecfe401b7947cc5a0fa",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "is_owner",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "team_members"
+      }
+    }
+  ]
+}

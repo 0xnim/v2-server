@@ -1,0 +1,17 @@
+{
+  "id": "mig_cndvtr8rm9bok9ak7gr0",
+  "parentID": "mig_cndvtm8rm9bok9ak7gq0",
+  "checksum": "1:3990c3d14443428acef6c8b37e490d85cdc8f78386c70d64537493e368fb6c65",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "slug",
+          "type": "string",
+          "unique": true
+        },
+        "table": "organizations"
+      }
+    }
+  ]
+}

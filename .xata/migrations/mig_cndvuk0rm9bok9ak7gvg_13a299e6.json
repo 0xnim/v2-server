@@ -1,0 +1,12 @@
+{
+  "id": "mig_cndvuk0rm9bok9ak7gvg",
+  "parentID": "mig_cndvu88rm9bok9ak7gu0",
+  "checksum": "1:13a299e612773d00728c4d69783ad8b8c5c67e2d854648b19358ba5c9ce3e99c",
+  "operations": [
+    {
+      "addTable": {
+        "table": "teams"
+      }
+    }
+  ]
+}

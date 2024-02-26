@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvqigrm9bok9ak7go0",
+  "parentID": "mig_cndvqfoelaf56a40ugtg",
+  "checksum": "1:ee65ee9ad9243340ba7774d970917e208a8a7f13030faa2094f85d05142e4e6a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "iron_url",
+          "type": "text"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cndvne8elaf56a40ugn0",
+  "parentID": "mig_cndvna0elaf56a40ugm0",
+  "checksum": "1:80845498a467e892ae65ce9c2ac84ea6538c14136214de71d8474921d18a06a7",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "loader",
+          "type": "string"
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

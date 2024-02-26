@@ -1,0 +1,12 @@
+{
+  "id": "mig_cndsuv0elaf56a40ufdg",
+  "parentID": "mig_cndsun0elaf56a40ufc0",
+  "checksum": "1:13ede2bf22b449d5dd9c02425ae5999370b153f98964ef2512a787b982cd0a10",
+  "operations": [
+    {
+      "addTable": {
+        "table": "projects"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cndvemorm9bok9ak7gcg",
+  "parentID": "mig_cndveloelaf56a40ugh0",
+  "checksum": "1:214abb5418c3852259fbfd1d7a210037d00202a0a5c003fb68ad74edc267843e",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "icon_url",
+        "table": "games"
+      }
+    }
+  ]
+}
