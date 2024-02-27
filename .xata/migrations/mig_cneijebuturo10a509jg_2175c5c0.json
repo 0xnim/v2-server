@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneijebuturo10a509jg",
+  "parentID": "mig_cneijasp5g7hi2v1uhgg",
+  "checksum": "1:2175c5c0a7533df84e8ca068086916bb2d6744643dece145b441c68030e0eecf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "downloads",
+          "type": "int"
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

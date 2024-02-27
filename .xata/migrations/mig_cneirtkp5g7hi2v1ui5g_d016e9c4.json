@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneirtkp5g7hi2v1ui5g",
+  "parentID": "mig_cneirmcp5g7hi2v1ui4g",
+  "checksum": "1:d016e9c49e919f8a4f772e1cbe4c0b8d37dff6c4ab8ea5283bbc45754127d8e9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "algorithm",
+          "type": "string"
+        },
+        "table": "hashes"
+      }
+    }
+  ]
+}

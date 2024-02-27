@@ -1,0 +1,19 @@
+{
+  "id": "mig_cneikd4p5g7hi2v1uhhg",
+  "parentID": "mig_cneijebuturo10a509jg",
+  "checksum": "1:f697907e9159f7b1ba241e3d6d24482ba6d324e90eaad94218df08dbc0af307a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "author_id",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

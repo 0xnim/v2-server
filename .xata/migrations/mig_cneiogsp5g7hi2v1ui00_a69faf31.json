@@ -1,0 +1,18 @@
+{
+  "id": "mig_cneiogsp5g7hi2v1ui00",
+  "parentID": "mig_cneiob4p5g7hi2v1uhv0",
+  "checksum": "1:a69faf31076fbcc93396749a77c7313c34b7d5534c7afce2ec5f8a870a09f8fe",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "is_primary",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "files"
+      }
+    }
+  ]
+}

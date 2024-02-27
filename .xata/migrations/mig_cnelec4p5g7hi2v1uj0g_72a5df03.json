@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnelec4p5g7hi2v1uj0g",
+  "parentID": "mig_cnele9ruturo10a50b70",
+  "checksum": "1:72a5df037410363af55f88741526384498dbc169462c26fdd96c0624ed0ca3cc",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "server_side",
+          "type": "bool"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

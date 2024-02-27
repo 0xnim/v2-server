@@ -1,0 +1,13 @@
+{
+  "id": "mig_cneiko4p5g7hi2v1uhjg",
+  "parentID": "mig_cneikmjuturo10a509kg",
+  "checksum": "1:8768d241be27c13e296021c0ba84199cb08be187dbceb87ea12780aa749c4f19",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "author_id",
+        "table": "loader"
+      }
+    }
+  ]
+}

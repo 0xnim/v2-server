@@ -20,6 +20,7 @@ const tables = [
       { column: "game", table: "projects" },
       { column: "game", table: "categories" },
       { column: "game", table: "loader" },
+      { column: "game", table: "game_versions" },
     ],
   },
   {
@@ -38,7 +39,10 @@ const tables = [
       { name: "webhook_sent", type: "bool" },
       { name: "color", type: "int" },
       { name: "organization", type: "link", link: { table: "organizations" } },
+      { name: "client_side", type: "bool" },
+      { name: "server_side", type: "bool" },
     ],
+    revLinks: [{ column: "project_id", table: "versions" }],
   },
   {
     name: "categories",
@@ -64,7 +68,10 @@ const tables = [
       { name: "github_id", type: "string", unique: true },
       { name: "username", type: "string", unique: true },
     ],
-    revLinks: [{ column: "user", table: "team_members" }],
+    revLinks: [
+      { column: "user", table: "team_members" },
+      { column: "author_id", table: "versions" },
+    ],
   },
   {
     name: "organizations",
@@ -99,6 +106,71 @@ const tables = [
       { name: "is_owner", type: "bool", notNull: true, defaultValue: "false" },
     ],
   },
+  {
+    name: "versions",
+    columns: [
+      { name: "name", type: "string" },
+      {
+        name: "version_number",
+        type: "string",
+        notNull: true,
+        defaultValue: "0.0.0",
+      },
+      { name: "project_id", type: "link", link: { table: "projects" } },
+      { name: "downloads", type: "int" },
+      { name: "author_id", type: "link", link: { table: "users" } },
+      {
+        name: "version_type",
+        type: "string",
+        notNull: true,
+        defaultValue: "release",
+      },
+      { name: "featured", type: "bool", notNull: true, defaultValue: "false" },
+      { name: "changelog", type: "text" },
+      {
+        name: "status",
+        type: "string",
+        notNull: true,
+        defaultValue: "unknown",
+      },
+      { name: "requested_status", type: "string" },
+    ],
+    revLinks: [{ column: "version_id", table: "files" }],
+  },
+  {
+    name: "files",
+    columns: [
+      { name: "version_id", type: "link", link: { table: "versions" } },
+      { name: "url", type: "text" },
+      { name: "filename", type: "text" },
+      {
+        name: "is_primary",
+        type: "bool",
+        notNull: true,
+        defaultValue: "false",
+      },
+      { name: "size", type: "int", notNull: true, defaultValue: "0" },
+      { name: "file_type", type: "string" },
+      { name: "metadata", type: "json" },
+    ],
+    revLinks: [{ column: "file_id", table: "hashes" }],
+  },
+  { name: "dependencies", columns: [] },
+  {
+    name: "hashes",
+    columns: [
+      { name: "file_id", type: "link", link: { table: "files" } },
+      { name: "algorithm", type: "string" },
+      { name: "hash", type: "text" },
+    ],
+  },
+  {
+    name: "game_versions",
+    columns: [
+      { name: "game", type: "link", link: { table: "games" } },
+      { name: "version_number", type: "string" },
+    ],
+  },
 ] as const;
 
 export type SchemaTables = typeof tables;
@@ -131,6 +203,21 @@ export type TeamsRecord = Teams & XataRecord;
 export type TeamMembers = InferredTypes["team_members"];
 export type TeamMembersRecord = TeamMembers & XataRecord;
 
+export type Versions = InferredTypes["versions"];
+export type VersionsRecord = Versions & XataRecord;
+
+export type Files = InferredTypes["files"];
+export type FilesRecord = Files & XataRecord;
+
+export type Dependencies = InferredTypes["dependencies"];
+export type DependenciesRecord = Dependencies & XataRecord;
+
+export type Hashes = InferredTypes["hashes"];
+export type HashesRecord = Hashes & XataRecord;
+
+export type GameVersions = InferredTypes["game_versions"];
+export type GameVersionsRecord = GameVersions & XataRecord;
+
 export type DatabaseSchema = {
   games: GamesRecord;
   projects: ProjectsRecord;
@@ -141,13 +228,18 @@ export type DatabaseSchema = {
   organizations: OrganizationsRecord;
   teams: TeamsRecord;
   team_members: TeamMembersRecord;
+  versions: VersionsRecord;
+  files: FilesRecord;
+  dependencies: DependenciesRecord;
+  hashes: HashesRecord;
+  game_versions: GameVersionsRecord;
 };
 
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
   databaseURL:
-    "https://Niklas-Wojtkowiak-s-workspace-ovvl73.us-east-1.xata.sh/db/xata-astro",
+    "https://Niklas-Wojtkowiak-s-workspace-ovvl73.us-east-1.xata.sh/db/v2",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {

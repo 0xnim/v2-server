@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneiln3uturo10a509lg",
+  "parentID": "mig_cneilisp5g7hi2v1uhog",
+  "checksum": "1:2a8224308b39751f8868110b6bdeb94b1d4e555c80b28b4f7dee70fcb1c13289",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "changelog",
+          "type": "text"
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

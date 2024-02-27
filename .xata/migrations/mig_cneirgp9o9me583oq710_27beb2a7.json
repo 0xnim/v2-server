@@ -1,0 +1,12 @@
+{
+  "id": "mig_cneirgp9o9me583oq710",
+  "parentID": "mig_cneire4p5g7hi2v1ui3g",
+  "checksum": "1:27beb2a754a043fd47f849d6180d857fdfbf06a458a82e3ee8d69cdba07fee0a",
+  "operations": [
+    {
+      "addTable": {
+        "table": "hashes"
+      }
+    }
+  ]
+}

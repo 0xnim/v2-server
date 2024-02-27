@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnele9ruturo10a50b70",
+  "parentID": "mig_cnejjvbuturo10a50a6g",
+  "checksum": "1:654852d8680c8275cf062cea6a4d355ceb398ad48f5352e67e299a2cc89e3649",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "client_side",
+          "type": "bool"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

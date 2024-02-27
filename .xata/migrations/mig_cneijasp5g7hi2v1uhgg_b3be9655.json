@@ -1,0 +1,19 @@
+{
+  "id": "mig_cneijasp5g7hi2v1uhgg",
+  "parentID": "mig_cneij3kp5g7hi2v1uhfg",
+  "checksum": "1:b3be965580e1940cacbe0ccef3d01e7ea2938eb69d65fa18d4f5bbbadff9b6f6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "project_id",
+          "type": "link",
+          "link": {
+            "table": "projects"
+          }
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

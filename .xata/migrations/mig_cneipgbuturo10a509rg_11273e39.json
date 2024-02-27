@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneipgbuturo10a509rg",
+  "parentID": "mig_cneip8buturo10a509qg",
+  "checksum": "1:11273e3917212c036d5a2f7de21dcd12c16554dcb4bfec2ccef178d4a4dde7d8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "metadata",
+          "type": "json"
+        },
+        "table": "files"
+      }
+    }
+  ]
+}

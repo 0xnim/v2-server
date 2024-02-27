@@ -1,5 +1,5 @@
 {
-  "databaseURL": "https://Niklas-Wojtkowiak-s-workspace-ovvl73.us-east-1.xata.sh/db/xata-astro",
+  "databaseURL": "https://Niklas-Wojtkowiak-s-workspace-ovvl73.us-east-1.xata.sh/db/v2",
   "codegen": {
     "output": "src/xata.ts"
   }

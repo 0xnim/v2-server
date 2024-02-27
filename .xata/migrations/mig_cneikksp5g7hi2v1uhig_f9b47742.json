@@ -1,0 +1,18 @@
+{
+  "id": "mig_cneikksp5g7hi2v1uhig",
+  "parentID": "mig_cneikd4p5g7hi2v1uhhg",
+  "checksum": "1:f9b477429e5217a7be3b91f05f9af5d3de206b8c00eb3604586050aee14b9575",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "featured",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "loader"
+      }
+    }
+  ]
+}

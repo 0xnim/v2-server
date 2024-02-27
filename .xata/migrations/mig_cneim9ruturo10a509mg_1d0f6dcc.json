@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneim9ruturo10a509mg",
+  "parentID": "mig_cneilvsp5g7hi2v1uhpg",
+  "checksum": "1:1d0f6dcc40ed46325c43762cc25477524433554e593bde26160b721af1b9f1b2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "requested_status",
+          "type": "string"
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

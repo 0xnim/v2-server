@@ -1,0 +1,19 @@
+{
+  "id": "mig_cnejjkkp5g7hi2v1uia0",
+  "parentID": "mig_cnejgfruturo10a50a50",
+  "checksum": "1:71b3c30ee622114e78dc0514f1e91cc4f63a2965295dc677706e1c99b6828722",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "game",
+          "type": "link",
+          "link": {
+            "table": "games"
+          }
+        },
+        "table": "game_versions"
+      }
+    }
+  ]
+}

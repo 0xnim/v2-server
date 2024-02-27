@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnejgfruturo10a50a50",
+  "parentID": "mig_cneis5juturo10a509sg",
+  "checksum": "1:f53e0830db0c2cad714aab78d0be5c68c35a41fce4028ff81058acaf389db11e",
+  "operations": [
+    {
+      "addTable": {
+        "table": "game_versions"
+      }
+    }
+  ]
+}

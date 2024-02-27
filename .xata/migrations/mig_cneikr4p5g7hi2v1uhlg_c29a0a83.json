@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneikr4p5g7hi2v1uhlg",
+  "parentID": "mig_cneikp4p5g7hi2v1uhkg",
+  "checksum": "1:c29a0a83b405d44699ba163713113dfed13c4c5a472c084656494c37aa6d01d1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "downloads",
+          "type": "int"
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

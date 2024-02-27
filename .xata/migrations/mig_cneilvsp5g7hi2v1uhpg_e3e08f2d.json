@@ -1,0 +1,18 @@
+{
+  "id": "mig_cneilvsp5g7hi2v1uhpg",
+  "parentID": "mig_cneiln3uturo10a509lg",
+  "checksum": "1:e3e08f2da0fe6c0953917ca96f354ff5217cf2e105a412cffad54b3123c166b8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "unknown"
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneis5juturo10a509sg",
+  "parentID": "mig_cneirtkp5g7hi2v1ui5g",
+  "checksum": "1:69370c3ca8ca93051bc8919c6e2422a65b34feede5fb1b108a2bc7502edab14b",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "hash",
+          "type": "text"
+        },
+        "table": "hashes"
+      }
+    }
+  ]
+}

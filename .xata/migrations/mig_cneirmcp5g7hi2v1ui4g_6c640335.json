@@ -1,0 +1,19 @@
+{
+  "id": "mig_cneirmcp5g7hi2v1ui4g",
+  "parentID": "mig_cneirgp9o9me583oq710",
+  "checksum": "1:6c640335b13ba1d3d415f592af37b9e8b21e321a8541905c07ad2988f84f04db",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "file_id",
+          "type": "link",
+          "link": {
+            "table": "files"
+          }
+        },
+        "table": "hashes"
+      }
+    }
+  ]
+}
