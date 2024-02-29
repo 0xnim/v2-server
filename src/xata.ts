@@ -19,7 +19,7 @@ const tables = [
     revLinks: [
       { column: "game", table: "projects" },
       { column: "game", table: "categories" },
-      { column: "game", table: "loader" },
+      { column: "game", table: "loaders" },
       { column: "game", table: "game_versions" },
     ],
   },
@@ -34,15 +34,22 @@ const tables = [
       { name: "status", type: "string" },
       { name: "downloads", type: "int" },
       { name: "summary", type: "string" },
-      { name: "iron_url", type: "text" },
+      { name: "icon_url", type: "text" },
       { name: "approved", type: "datetime" },
       { name: "webhook_sent", type: "bool" },
       { name: "color", type: "int" },
       { name: "organization", type: "link", link: { table: "organizations" } },
       { name: "client_side", type: "bool" },
       { name: "server_side", type: "bool" },
+      {
+        name: "project_type",
+        type: "string",
+        notNull: true,
+        defaultValue: "mod",
+      },
+      { name: "loaders", type: "multiple" },
     ],
-    revLinks: [{ column: "project_id", table: "versions" }],
+    revLinks: [{ column: "project", table: "versions" }],
   },
   {
     name: "categories",
@@ -54,12 +61,13 @@ const tables = [
   },
   { name: "tags", columns: [] },
   {
-    name: "loader",
+    name: "loaders",
     columns: [
       { name: "loader", type: "string" },
       { name: "game", type: "link", link: { table: "games" } },
       { name: "icon", type: "text" },
       { name: "project_type", type: "string" },
+      { name: "slug", type: "string", unique: true },
     ],
   },
   {
@@ -116,7 +124,7 @@ const tables = [
         notNull: true,
         defaultValue: "0.0.0",
       },
-      { name: "project_id", type: "link", link: { table: "projects" } },
+      { name: "project", type: "link", link: { table: "projects" } },
       { name: "downloads", type: "int" },
       { name: "author_id", type: "link", link: { table: "users" } },
       {
@@ -133,7 +141,7 @@ const tables = [
         notNull: true,
         defaultValue: "unknown",
       },
-      { name: "requested_status", type: "string" },
+      { name: "game_versions", type: "multiple" },
     ],
     revLinks: [{ column: "version_id", table: "files" }],
   },
@@ -188,8 +196,8 @@ export type CategoriesRecord = Categories & XataRecord;
 export type Tags = InferredTypes["tags"];
 export type TagsRecord = Tags & XataRecord;
 
-export type Loader = InferredTypes["loader"];
-export type LoaderRecord = Loader & XataRecord;
+export type Loaders = InferredTypes["loaders"];
+export type LoadersRecord = Loaders & XataRecord;
 
 export type Users = InferredTypes["users"];
 export type UsersRecord = Users & XataRecord;
@@ -223,7 +231,7 @@ export type DatabaseSchema = {
   projects: ProjectsRecord;
   categories: CategoriesRecord;
   tags: TagsRecord;
-  loader: LoaderRecord;
+  loaders: LoadersRecord;
   users: UsersRecord;
   organizations: OrganizationsRecord;
   teams: TeamsRecord;

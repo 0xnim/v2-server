@@ -1,0 +1,13 @@
+{
+  "id": "mig_cneua6mn2va4pt582v90",
+  "parentID": "mig_cnem6up9o9me583oq7p0",
+  "checksum": "1:6843a771326cf60ef64e63db48c843ca1c5fa643af155b6c9dd440259fdaa045",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "loaders",
+        "oldName": "loader"
+      }
+    }
+  ]
+}

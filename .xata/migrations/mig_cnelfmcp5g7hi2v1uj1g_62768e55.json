@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnelfmcp5g7hi2v1uj1g",
+  "parentID": "mig_cnelec4p5g7hi2v1uj0g",
+  "checksum": "1:62768e5575d9ed7ebe271bbdaec1b33bf13abea0e8be0537568fba76b0672118",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "requested_status",
+        "table": "versions"
+      }
+    }
+  ]
+}

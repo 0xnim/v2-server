@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnelui4p5g7hi2v1uj4g",
+  "parentID": "mig_cnelfmcp5g7hi2v1uj1g",
+  "checksum": "1:2aeed61ed9d37ae911ae8abf81c2b0b8d83c09abbc461b53e9579c6fcba0c391",
+  "operations": [
+    {
+      "addTable": {
+        "table": "loaders_versions"
+      }
+    }
+  ]
+}

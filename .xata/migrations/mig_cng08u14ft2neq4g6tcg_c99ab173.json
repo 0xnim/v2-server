@@ -1,0 +1,19 @@
+{
+  "id": "mig_cng08u14ft2neq4g6tcg",
+  "parentID": "mig_cnfc7ddlmsl85qi2n94g",
+  "checksum": "1:c99ab1739346e5abcb519c4d59c69ef56e67a33ca2d3163a418cb6b39fa47de8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "loader",
+          "type": "link",
+          "link": {
+            "table": "loaders"
+          }
+        },
+        "table": "loaders_versions"
+      }
+    }
+  ]
+}

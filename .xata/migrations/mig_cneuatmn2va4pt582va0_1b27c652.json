@@ -1,0 +1,17 @@
+{
+  "id": "mig_cneuatmn2va4pt582va0",
+  "parentID": "mig_cneua6mn2va4pt582v90",
+  "checksum": "1:1b27c6522fb65a2e1c9068b323ffee4fd3629afcbec6bbf7d87317d0cdcfcf13",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "slug",
+          "type": "string",
+          "unique": true
+        },
+        "table": "loaders"
+      }
+    }
+  ]
+}

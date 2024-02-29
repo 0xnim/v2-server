@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnfc7ddlmsl85qi2n94g",
+  "parentID": "mig_cneuf3nrjeiql8rj2ol0",
+  "checksum": "1:60b2082befc9ae769cf8f9e511b998ac801bde8d0db72af5679d1c216e53e3ae",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "game_versions",
+          "type": "multiple"
+        },
+        "table": "versions"
+      }
+    }
+  ]
+}

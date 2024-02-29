@@ -1,0 +1,16 @@
+{
+  "id": "mig_cneub2o5de04757rrkfg",
+  "parentID": "mig_cneuatmn2va4pt582va0",
+  "checksum": "1:4fb59abb00401ce34ad45a17954712319047f20328f166e17096c58a50725b7a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "loaders",
+          "type": "multiple"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

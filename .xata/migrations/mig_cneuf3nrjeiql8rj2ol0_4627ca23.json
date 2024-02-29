@@ -1,0 +1,14 @@
+{
+  "id": "mig_cneuf3nrjeiql8rj2ol0",
+  "parentID": "mig_cneub2o5de04757rrkfg",
+  "checksum": "1:4627ca2341d72d91b57d3ece14725b1a5c82c024bdcfcb271a0f50755a16d56c",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "project",
+        "oldName": "project_id",
+        "table": "versions"
+      }
+    }
+  ]
+}

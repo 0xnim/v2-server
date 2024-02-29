@@ -1,0 +1,14 @@
+{
+  "id": "mig_cng0iqji6bcu2lprf330",
+  "parentID": "mig_cng09jh4ft2neq4g6tdg",
+  "checksum": "1:8227257961378a91670c72cca41e9c1acfe02ae0226faa5238c3e0948e934d7d",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "icon_url",
+        "oldName": "iron_url",
+        "table": "projects"
+      }
+    }
+  ]
+}

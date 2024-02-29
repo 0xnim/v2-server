@@ -1,0 +1,12 @@
+{
+  "id": "mig_cng09jh4ft2neq4g6tdg",
+  "parentID": "mig_cng08u14ft2neq4g6tcg",
+  "checksum": "1:749c7332dd4d683e837d463766905474df2c6586f67fc9649627652ce4eea4af",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "loaders_versions"
+      }
+    }
+  ]
+}
