@@ -15,6 +15,7 @@ const APPLICATION_VERSION = process.env.VERSION;
 
 import miscRoutes from './routes/miscRoutes.ts'
 import gameRoutes from './routes/gameRoutes.ts';
+import categoryRoutes from './routes/categoryRoutes.ts'
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,29 +25,7 @@ app.use(express.json());
 // ROUTES
 app.use('/v2', miscRoutes);
 app.use('/v2/games', gameRoutes);
-
-import { checkIfNumber } from './utils/utils.ts';
-
-app.get('/categories/:id', async (req: Request, res: Response) => {
-  const gameId = req.params.id;
-  try {
-    if (!gameId) {
-      res.status(400).send('Game id is required');
-    } else if (!checkIfNumber(gameId)) {
-      const categories = await xata.db.categories.filter({ "game.slug": gameId }).getMany();
-      res.send(categories);
-    } else {
-      const categories = await xata.db.categories.filter({ "game.id": gameId }).getMany();
-      res.send(categories);
-    }
-  } catch (error) {
-    if (error.status === 404) {
-      res.status(404).send('Game not found');
-    } else {
-      res.status(500).send('Internal server error');
-    }
-  } 
-});
+app.use('/v2/categories', categoryRoutes);
 
 // search projects TODO
 app.get('/search', async (req: Request, res: Response) => {
